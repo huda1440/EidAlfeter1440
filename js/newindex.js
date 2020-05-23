@@ -1,3 +1,4 @@
+
 var text_title ="Overlay text";
 
 var canvas = document.getElementById('imageCanvas');
@@ -5,7 +6,7 @@ var ctx = canvas.getContext('2d');
 var img = new Image();
 img.crossOrigin="anonymous";
 
-window.addEventListener('load', DrawPlaceholder(img,ctx,"#FFFFFF",'p3.jpg',470,350));
+window.addEventListener('load', DrawPlaceholder(img,ctx,"#7F7F7F",'p3.jpg',470,350));
 
 
 var canvas1 = document.getElementById('imageCanvas1');
@@ -13,7 +14,7 @@ var ctx1 = canvas1.getContext('2d');
 var img1 = new Image();
 img1.crossOrigin="anonymous";
 
-window.addEventListener('load', DrawPlaceholder(img1,ctx1,"#7F7F7F",'p2.jpg',100,130));
+window.addEventListener('load', DrawPlaceholder(img1,ctx1,"#7F7F7F",'p2.jpg',450,330));
 
 
 var canvas2 = document.getElementById('imageCanvas2');
@@ -58,7 +59,7 @@ function DrawPlaceholder(photo,canv,clr,sorc,x,y) {
         DynamicText(canv,photo,clr,x,y)
 };
     photo.src =sorc;
-
+  
 }
 function DrawOverlay(photo,canv) {
 canv.drawImage(photo,0,0);
@@ -66,7 +67,7 @@ canv.drawImage(photo,0,0);
     canv.fillRect(0, 0, canvas.width, canvas.height);
 }
 function DrawText(canv,fillcolor) {
-    canv.fillStyle = fillcolor;
+    canv.fillStyle = fillcolor; 
     canv.textBaseline = 'middle';
     canv.font = "19px Almarai";
 }
@@ -74,17 +75,17 @@ function DynamicText(canv,photo,clr,x,y) {
   document.getElementById('name').addEventListener('keyup', function() {
     canv.clearRect(0, 0, canvas.width, canvas.height);
     DrawOverlay(photo,canv);
-    DrawText(canv,clr);
+    DrawText(canv,clr); 
     text_title = this.value;
-
-
+   
+      
     var lineheight = 30;
 var lines = text_title.split('\n');
 
 for (var i = 0; i<lines.length; i++)
-    canv.fillText(lines[i], x, y + (i*lineheight) );
+    canv.fillText(lines[i], x, y + (i*lineheight) );  
     canv.textAlign = 'center';
-  });
+  });  
 }
 
 
