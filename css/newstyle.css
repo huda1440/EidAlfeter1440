@@ -1,4 +1,3 @@
-@  
 @import url(https://fonts.googleapis.com/css?family=Almarai);
 
 body {
@@ -11,12 +10,12 @@ body {
   font-family: Almarai;
   padding-bottom: 0em;
     align-content: center;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
 }
 
 .page-wrap {
       position: relative;
-   display: flex;   
+   display: flex;
    flex-wrap: wrap;
    margin: 2em auto;
    align-items: center;
@@ -26,11 +25,11 @@ body {
 }
 
 .canvas {
-   display: block;   
+   display: block;
 margin: auto;
     margin-bottom: 15px;
     align-items: center;
-   
+
 }
 
 h1{
@@ -43,7 +42,7 @@ h1{
     height: 640px;
     background-size: cover;
     background-position: center top;
-    background-image: url("med-3.png");    
+    background-image: url("med-3.png");
 }
 
 
@@ -63,7 +62,7 @@ h1{
   text-align: center;
   color: #6A5B44;
    width:450px;
- font-family: Almarai, sans-serif; 
+ font-family: Almarai, sans-serif;
 }
 
 .button {
@@ -81,11 +80,11 @@ padding: 16px 28px;
 }
 
 .button4 {
-  background-color: #A58662;
+  background-color: #0B656E;
 }
 
 .button4:hover {
-    background-color: #897053;
+    background-color: #308F98;
 }
 
 .controls__label {
@@ -134,7 +133,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
      align-content: center;
   align-items: center;
   text-align: center;
-    
+
 }
 
 #canvasID1 {
@@ -142,7 +141,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 label {
-  background-color: #003E59;
+  background-color: #0B656E;
   color: black;
   font-weight: bold;
   padding: 8px;
@@ -152,7 +151,7 @@ label {
 }
 
 a {
-    
+
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -161,7 +160,7 @@ a {
 }
 
 #footer {
-  background-color: #003E59;
+  background-color: #0B656E;
   color: #fff;
   font-size: 8pt;
   letter-spacing: 1px;
@@ -173,33 +172,33 @@ a {
 
 @media screen and (max-width: 600px){
    .page-wrap {
-  
+
     padding-left: 2%;
     padding-right: 2%;
 
 }
-      
+
       .header-up {
               height: 840px;
          list-style: none;
          background-color: #eee;
     background-size: cover;
      background-position: center top;
-    background-image: url("smal-h.png");    
+    background-image: url("smal-h.png");
 }
     }
 
 @media screen and (min-width: 750px){
       .page-wrap {
-  
+
     padding-left: 2%;
     padding-right: 2%;
 
     }
       .header-up {
                      height: 840px;
- 
-    background-image: url("smal-h.png");    
+
+    background-image: url("smal-h.png");
 }
     }
 
@@ -207,21 +206,21 @@ a {
 
 @media screen and (min-width: 1800px){
    .page-wrap {
-  
+
     padding-left: 2%;
     padding-right: 2%;
 
 }
-    
+
      .header-up {
          padding: 10px 40px 16px;
          list-style: none;
          background-color: #eee;
     background-size: cover;
      background-position: center top;
-    background-image: url("med-3.png");    
+    background-image: url("med-3.png");
 }
-              
+
     }
 
 .centered {
