@@ -30,7 +30,7 @@ var ctx3 = canvas3.getContext('2d');
 var img3 = new Image();
 img3.crossOrigin="anonymous";
 
-    window.addEventListener('load', DrawPlaceholder(img3,ctx3,"#FFFFFF",'p4.jpg',350,200));
+    window.addEventListener('load', DrawPlaceholder(img3,ctx3,"#FFFFFF",'p4.jpg',350,400));
 
 
 
